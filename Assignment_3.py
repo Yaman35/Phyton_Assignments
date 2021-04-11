@@ -38,4 +38,4 @@ result = age or chronic or immune
 if result:                           # Bu kullanım eğer sonuç True ise anlamına gelir
   print("There is a risk of death")
 else:                                # Burası da değilse 
-  print("There is not a risk of death")
+  print("There is not a risk of death") 
