@@ -13,4 +13,4 @@ converts the entered distance into miles and prints the result."""
 km = float(input("Please enter the kilometer to be converted to mile: "))
 mile = km * 0.62137
 
-print(str(km) + " kilometers equals to "+ str(mile) + " miles")
+print(str(km) + " kilometers equals to "+ str(mile) + " miles") 
