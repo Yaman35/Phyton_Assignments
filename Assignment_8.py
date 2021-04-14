@@ -7,10 +7,25 @@ Examples
 Given  word	Desired Output (explanation)
 tester	False (uses only left-hand fingers)*
 polly	False (uses only right-hand fingers)*
-clarusway	True (uses both hand fingers)*"""
+clarusway	True (uses both hand fingers)*"""      
 
-left = set("qwertasdfghzxcvb")
-right = set("üğpoıuyişlkjçömn")
-word = set(input("Please enter a word: "))
-result = bool(word.intersection(left)) and bool(word.intersection(right))
-print(result)
+left = set("qwertasdfghzxcvb") # Sol el harflerini bir küme yaptık 
+right = set("üğpoıuyişlkjçömn") # Sağ el harflerini bir küme yaptık
+word = set(input("Please enter a word: ")) #Kullanıcıdan bir kelime aldık ve kümeye attık
+result = bool(word.intersection(left)) and bool(word.intersection(right)) # Kullanıcının girdiği kelime kümesi ile sol-sağ el kümelerinin bir kesişimi olup olmadığına baktık
+print(result)                                                             # Varsa zaten boolean olarak True yoksa False döner 
+print(word.intersection(left)) 
+print(word.intersection(right))                                                          
+
+
+# Bir başka çözüm (specific kelimeler için)
+# left_hand = {"q", "a", "z", "w", "s", "x", "e", "d", "c", "r", "f", "v", "t", "g", "b"}
+# right_hand = {"y", "h", "n", "u", "j", "m", "ı", "k", "ö", "o", "l", "ç", "p", "ş", "ğ", "ü", "i"}
+
+# tester = set("tester")
+# polly = set("polly")
+# clarus = set("clarus")
+
+# print("tester is comfortable word :",  tester.issubset(left_hand) and tester.issubset(right_hand))
+# print("polly is comfortable word :",  polly.issubset(left_hand) and polly.issubset(right_hand))
+# print("clarus is comfortable word :", not clarus.issubset(left_hand) and not clarus.issubset(right_hand))
