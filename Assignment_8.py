@@ -12,6 +12,7 @@ clarusway	True (uses both hand fingers)*"""
 left = set("qwertasdfghzxcvb") # Sol el harflerini bir küme yaptık 
 right = set("üğpoıuyişlkjçömn") # Sağ el harflerini bir küme yaptık
 word = set(input("Please enter a word: ")) #Kullanıcıdan bir kelime aldık ve kümeye attık
+
 result = bool(word.intersection(left)) and bool(word.intersection(right)) # Kullanıcının girdiği kelime kümesi ile sol-sağ el kümelerinin bir kesişimi olup olmadığına baktık
 print(result)                                                             # Varsa zaten boolean olarak True yoksa False döner 
 print(word.intersection(left)) 
